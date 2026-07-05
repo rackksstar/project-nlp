@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prediksi Sentimen Komentar MBG</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="site-nav">
+        <a class="site-nav__link site-nav__link--active" href="./index.html">Analisis</a>
+        <a class="site-nav__link" href="./dashboard.html">Dashboard</a>
+      </nav>
+      <div class="hero__content">
+        <p class="eyebrow">NLP • SENTIMENT ANALYSIS MBG</p>
+        <h1>Prediksi Sentimen Komentar MBG</h1>
+        <p class="hero__copy">
+          Sistem ini menganalisis komentar tentang program Makan Bergizi Gratis dan
+          mengklasifikasikannya ke dalam kategori <strong class="positive">Positif</strong>,
+          <strong class="neutral">Netral</strong>, atau <strong class="negative">Negatif</strong>
+          menggunakan model IndoBERT.
+        </p>
+      </div>
+
+      <aside class="system-card">
+        <p class="eyebrow">MODEL</p>
+        <h2>Ringkasan Sistem</h2>
+        <div class="system-card__item">
+          <span>Metode</span>
+          <strong>BERT</strong>
+        </div>
+        <div class="system-card__item">
+          <span>Domain</span>
+          <strong>Komentar MBG</strong>
+        </div>
+        <div class="system-card__item">
+          <span>Kelas</span>
+          <strong>3 Sentimen</strong>
+        </div>
+      </aside>
+    </header>
+
+    <main class="layout">
+      <section class="workspace">
+        <article class="panel input-panel">
+          <div class="panel__header">
+            <div>
+              <p class="eyebrow">INPUT TEKS</p>
+              <h2>Komentar Masyarakat tentang MBG</h2>
+            </div>
+            <span class="pill">BERT</span>
+          </div>
+
+          <textarea
+            id="commentInput"
+            rows="7"
+            placeholder="Masukkan komentar tentang program MBG yang ingin dianalisis sentimennya..."
+          ></textarea>
+
+          <button class="primary-button" id="analyzeButton" type="button">Analisis Sekarang</button>
+          <p class="error-text" id="errorText" role="alert"></p>
+        </article>
+
+        <article class="panel output-panel">
+          <p class="eyebrow">OUTPUT</p>
+          <h2>Hasil Prediksi</h2>
+
+          <div class="result-box" id="resultBox">
+            Masukkan teks dan klik <strong>Analisis Sekarang</strong> untuk melihat hasil prediksi sentimen MBG.
+          </div>
+
+          <div class="single-result" id="singleResult">
+            <p class="eyebrow">HASIL ANALISIS</p>
+            <div class="prediction-card prediction-card--empty">
+              <span class="prediction-card__label">Belum ada hasil</span>
+              <strong class="prediction-card__score">-%</strong>
+              <p>Hasil akhir akan muncul sebagai Positif, Netral, atau Negatif.</p>
+            </div>
+          </div>
+
+          <div class="meta-grid">
+            <div><span>Model</span><strong>IndoBERT MBG</strong></div>
+            <div><span>Waktu</span><strong id="timeMeta">--:--:--</strong></div>
+            <div><span>Status</span><strong id="statusMeta">Menunggu</strong></div>
+          </div>
+        </article>
+      </section>
+
+      <aside class="sidebar">
+        <article class="panel info-panel">
+          <p class="eyebrow">TUJUAN</p>
+          <h2>Analisis Komentar MBG</h2>
+          <p>
+            Sistem membantu membaca persepsi masyarakat terhadap MBG secara cepat,
+            konsisten, dan otomatis berdasarkan teks komentar.
+          </p>
+        </article>
+
+        <article class="panel label-panel">
+          <p class="eyebrow">LABEL SENTIMEN</p>
+          <div class="label-card label-card--positive">
+            <strong>Positif</strong>
+            <p>Dukungan, apresiasi, rasa puas, atau pengalaman baik.</p>
+          </div>
+          <div class="label-card label-card--neutral">
+            <strong>Netral</strong>
+            <p>Informasi umum atau pernyataan tanpa emosi kuat.</p>
+          </div>
+          <div class="label-card label-card--negative">
+            <strong>Negatif</strong>
+            <p>Kritik, keluhan, kekhawatiran, atau penolakan.</p>
+          </div>
+        </article>
+
+        <article class="panel history-panel">
+          <p class="eyebrow">RIWAYAT</p>
+          <h2>Prediksi Terakhir</h2>
+          <div id="historyList" class="history-list">
+            <p class="history-empty">Belum ada prediksi.</p>
+          </div>
+        </article>
+      </aside>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

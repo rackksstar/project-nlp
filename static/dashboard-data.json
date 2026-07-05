@@ -1,0 +1,346 @@
+{
+  "source": "D:\\project-nlp\\mbg_combined_clean.csv",
+  "generatedAt": "2026-06-30T07:40:33",
+  "model": "IndoBERT Fine-tuned MBG Sentiment",
+  "device": "CUDA",
+  "total": 3487,
+  "counts": {
+    "positif": 851,
+    "netral": 1367,
+    "negatif": 1269
+  },
+  "percentages": {
+    "positif": 24.4,
+    "netral": 39.2,
+    "negatif": 36.39
+  },
+  "averageConfidence": 93.97,
+  "trend": [
+    {
+      "name": "1-349",
+      "positif": 91,
+      "netral": 156,
+      "negatif": 102
+    },
+    {
+      "name": "350-698",
+      "positif": 70,
+      "netral": 162,
+      "negatif": 117
+    },
+    {
+      "name": "699-1047",
+      "positif": 91,
+      "netral": 157,
+      "negatif": 101
+    },
+    {
+      "name": "1048-1396",
+      "positif": 97,
+      "netral": 146,
+      "negatif": 106
+    },
+    {
+      "name": "1397-1745",
+      "positif": 104,
+      "netral": 138,
+      "negatif": 107
+    },
+    {
+      "name": "1746-2094",
+      "positif": 94,
+      "netral": 125,
+      "negatif": 130
+    },
+    {
+      "name": "2095-2443",
+      "positif": 83,
+      "netral": 120,
+      "negatif": 146
+    },
+    {
+      "name": "2444-2792",
+      "positif": 77,
+      "netral": 110,
+      "negatif": 162
+    },
+    {
+      "name": "2793-3141",
+      "positif": 72,
+      "netral": 119,
+      "negatif": 158
+    },
+    {
+      "name": "3142-3487",
+      "positif": 72,
+      "netral": 134,
+      "negatif": 140
+    }
+  ],
+  "topTerms": {
+    "negatif": [
+      {
+        "term": "tidak",
+        "count": 624
+      },
+      {
+        "term": "anak",
+        "count": 219
+      },
+      {
+        "term": "rakyat",
+        "count": 205
+      },
+      {
+        "term": "bukan",
+        "count": 185
+      },
+      {
+        "term": "orang",
+        "count": 183
+      },
+      {
+        "term": "negara",
+        "count": 181
+      },
+      {
+        "term": "sekolah",
+        "count": 154
+      },
+      {
+        "term": "gizi",
+        "count": 138
+      }
+    ],
+    "netral": [
+      {
+        "term": "dapur",
+        "count": 271
+      },
+      {
+        "term": "tidak",
+        "count": 220
+      },
+      {
+        "term": "gizi",
+        "count": 148
+      },
+      {
+        "term": "anak",
+        "count": 132
+      },
+      {
+        "term": "sekolah",
+        "count": 112
+      },
+      {
+        "term": "prabowo",
+        "count": 104
+      },
+      {
+        "term": "sppg",
+        "count": 102
+      },
+      {
+        "term": "anggaran",
+        "count": 99
+      }
+    ],
+    "positif": [
+      {
+        "term": "tidak",
+        "count": 139
+      },
+      {
+        "term": "anak",
+        "count": 100
+      },
+      {
+        "term": "dapur",
+        "count": 81
+      },
+      {
+        "term": "banget",
+        "count": 77
+      },
+      {
+        "term": "gizi",
+        "count": 67
+      },
+      {
+        "term": "sekolah",
+        "count": 65
+      },
+      {
+        "term": "menu",
+        "count": 65
+      },
+      {
+        "term": "indonesia",
+        "count": 51
+      }
+    ]
+  },
+  "samples": [
+    {
+      "index": 2075,
+      "text": "@Hidupsebagai62 betul sekali..\n- buruk tata kelola pemerintahannya.. amburadul..\n- kebijakan publik yang tidak transparan\n- minim akuntabilitas (mana laporan keuangan dan audit MBG - sebagai program prioritas dan alokasi dana besar - kudu dilakukan audit)\n- merusak merit system\n- menyuburkan KKN",
+      "cleanText": "buruk tata kelola pemerintahannya amburadul kebijakan publik tidak transparan minim akuntabilitas laporan keuangan audit makan bergizi gratis program prioritas alokasi dana kudu audit merusak merit system menyuburkan kkn",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.53
+    },
+    {
+      "index": 2876,
+      "text": "@DokterTifa Makin lama kasus ini hanya jadi Pengalihan Isu saja dari hancurnya Rupiah, IHSG, UMKM, APBN, Daya Beli Masyarakat karna program MBG &amp; KMP yg menyebabkan inflasi.\n\nTerbukti Rakyat Bersuara @officialinews_ takut sekali bahas kondisi Ekonomi RI dan lebih mengulik kasus fiktif tsb 🤔",
+      "cleanText": "makin lama kasus ini hanya jadi pengalihan isu saja dari hancurnya rupiah ihsg umkm apbn daya beli masyarakat karna program makan bergizi gratis amp kmp yg menyebabkan inflasi terbukti rakyat bersuara takut sekali bahas kondisi ekonomi ri dan lebih mengulik kasus fiktif tsb",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.53
+    },
+    {
+      "index": 2840,
+      "text": "Lemah dalam tata kelola dan disiplin fiskal, kebijakan Prabowo—dari koperasi desa merah putih hingga makan bergizi gratis—centang-perenang karena minim perencanaan.",
+      "cleanText": "lemah dalam tata kelola dan disiplin fiskal kebijakan prabowodari koperasi desa merah putih hingga makan bergizi gratiscentangperenang karena minim perencanaan",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.52
+    },
+    {
+      "index": 855,
+      "text": "@danualiasudan @LambeSahamjja Alhamdulillah PKS tetap solid mendukung Program MBG Presiden Prabowo Subianto demi tinggi badan anak jadi 180cm",
+      "cleanText": "alhamdulillah pks solid mendukung program makan bergizi gratis presiden prabowo subianto badan anak cm",
+      "label": "positif",
+      "labelTitle": "Positif",
+      "confidence": 99.51
+    },
+    {
+      "index": 1193,
+      "text": "Dollar naik Rupiah melemah dia pun tidak peduli yang penting  insentif 6 jt per hari cair...\n\n\"Joget 1 Dollar\" https://t.co/3PEjfe2ofq",
+      "cleanText": "dollar rupiah melemah tidak peduli insentif jt cair joget dollar",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.51
+    },
+    {
+      "index": 2045,
+      "text": "@bakuldimsum_ Mungkin adminnya meninggal keracunan MBG",
+      "cleanText": "adminnya meninggal keracunan makan bergizi gratis",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.51
+    },
+    {
+      "index": 2929,
+      "text": "Alhamdulillah 3 tempat lolos\n1. Kontrak selasa, mulai 14 Juni, tempat bagus outdoor:) gaji pokok di atas UMK, deket kos\n2. Dikasih kesempatan mikir 1 minggu, tempatnya sejuk indoor:) gaji pokok UMK, 15 menit. \n3. Diundang online training kamis, store kecil, 20 menit, 160K/Hari",
+      "cleanText": "alhamdulillah tempat lolos kontrak selasa mulai juni tempat bagus outdoor gaji pokok di atas umk deket kos dikasih kesempatan mikir minggu tempatnya sejuk indoor gaji pokok umk menit diundang online training kamis store kecil menit khari",
+      "label": "positif",
+      "labelTitle": "Positif",
+      "confidence": 99.5
+    },
+    {
+      "index": 1103,
+      "text": "Momen hangat Presiden Prabowo santap siang menu Makan Bergizi Gratis (MBG) bareng siswa &amp; ortu di SRMP 17 Tabanan, Bali! 🍱✨ Beliau gembira melihat perkembangan Sekolah Rakyat yang sangat dibutuhkan masyarakat. Kualitas gizi kuat, akses pendidikan meningkat🇮🇩 https://t.co/vhBJUpSXmX",
+      "cleanText": "momen hangat presiden prabowo santap siang menu makan bergizi gratis makan bergizi gratis bareng siswa amp ortu srmp tabanan bali beliau gembira perkembangan sekolah rakyat sangat dibutuhkan masyarakat kualitas gizi kuat akses pendidikan meningkat",
+      "label": "positif",
+      "labelTitle": "Positif",
+      "confidence": 99.49
+    },
+    {
+      "index": 653,
+      "text": "@menuembegejelek hak siswa dirampas? pajak disalahgunakan?\nlah itumah kesalahan sedari awal MBG dibangun wkwkwk",
+      "cleanText": "hak siswa dirampas pajak disalahgunakan itumah kesalahan sedari makan bergizi gratis dibangun wkwkwk",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.48
+    },
+    {
+      "index": 1619,
+      "text": "IHSG... hari ini kamu benar-benar menghancurkan aku.\n\nDari pagi sampai malam, aku sudah berjuang bertahun-tahun di pasar ini. Menyisihkan gaji, menganalisa chart sampai larut malam, memegang saham-saham kesayangan dengan harapan yang begitu besar. BBCA, BBRI, dan semua emiten yang aku percaya... semuanya ikut terpuruk bersamamu. \nSetiap candle merah yang muncul seperti pisau yang menusuk pelan-pelan ke dompet dan hati ini.\n\nAku sudah menangis diam-diam melihat portofolio yang dulu bangga, kini menyusut tanpa ampun. Semua rencana pensiun enam tahun lagi, mimpi financial freedom, liburan keluarga, semuanya hancur berantakan hari ini. \nAku capek. Capek berharap, capek DCA di saat yang salah, capek melihat green yang cuma sesaat sebelum merah kembali mendominasi.\n\nMaka hari ini, dengan berat hati, aku menyerah. Aku pamit dari market. Layar trading akan kumatikan, aplikasi broker ku-uninstall, dan akun trading ku biarkan tidur selamanya. \n\nTerima kasih atas semua pelajaran mahal yang kamu berikan — tentang keserakahan, kesabaran yang sia-sia, dan betapa rapuhnya mimpi yang dibangun di atas angka di layar.\nSelamat tinggal IHSG. Selamat tinggal saham-sahamku. Aku pulang dengan hati yang hancur, tapi mungkin ini yang terbaik. Semoga suatu saat nanti, kalau aku sudah sembuh, aku bisa melihatmu lagi... tapi untuk sekarang, aku benar-benar menyerah.\"\n\nHIDUP MBG !!!",
+      "cleanText": "ihsg menghancurkan pagi malam berjuang bertahun pasar menyisihkan gaji menganalisa chart larut malam memegang saham saham kesayangan harapan bbca bbri emiten percaya terpuruk bersamamu candle merah muncul pisau menusuk pelan pelan dompet hati menangis diam diam portofolio bangga menyusut ampun rencana pensiun enam mimpi financial freedom liburan keluarga hancur berantakan capek capek berharap capek dca salah capek green merah mendominasi berat hati menyerah pamit market layar trading kumatikan aplikasi broker ku uninstall akun trading ku biarkan tidur terima kasih pelajaran mahal keserakahan kesabaran sia sia betapa rapuhnya mimpi dibangun angka layar selamat tinggal ihsg selamat tinggal saham sahamku pulang hati hancur terbaik semoga sembuh melihatmu menyerah hidup makan bergizi gratis",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.47
+    },
+    {
+      "index": 2962,
+      "text": "Program Makan Bergizi Gratis (MBG) dari SPPG YKB Polres Tanah Datar membawa dampak positif bagi para siswa di UPT SDN 04 Baringin. Para siswa mengaku sangat terbantu sejak adanya program tersebut karena dapat mengurangi pengeluaran uang jajan dan mulai menabung. Selain menu yang dinilai enak dan bergizi, kehadiran MBG juga membuat banyak siswa yang biasanya membawa bekal dari rumah kini tidak perlu lagi membawa makanan sendiri ke sekolah. Program ini pun disambut antusias karena dinilai meringankan beban sekaligus mendukung semangat belajar siswa. #MenjagaKetahananPangan menjadi langkah nyata dalam Mendukung ketersediaan pangan yang berkualitas serta Melayani Gizi Indonesia untuk mewujudkan generasi yang sehat dan kuat.",
+      "cleanText": "program makan bergizi gratis makan bergizi gratis dari sppg ykb polres tanah datar membawa dampak positif bagi para siswa di upt sdn baringin para siswa mengaku sangat terbantu sejak adanya program tersebut karena dapat mengurangi pengeluaran uang jajan dan mulai menabung selain menu yang dinilai enak dan bergizi kehadiran makan bergizi gratis juga membuat banyak siswa yang biasanya membawa bekal dari rumah kini tidak perlu lagi membawa makanan sendiri ke sekolah program ini pun disambut antusias karena dinilai meringankan beban sekaligus mendukung semangat belajar siswa menjadi langkah nyata dalam mendukung ketersediaan pangan yang berkualitas serta melayani gizi indonesia untuk mewujudkan generasi yang sehat dan kuat",
+      "label": "positif",
+      "labelTitle": "Positif",
+      "confidence": 99.47
+    },
+    {
+      "index": 3022,
+      "text": "𝐌𝐞𝐧𝐠𝐮𝐩𝐚𝐬 𝐩𝐞𝐫𝐢𝐧𝐠𝐚𝐭𝐚𝐧 𝐤𝐞𝐫𝐚𝐬 𝐓𝐡𝐞 𝐄𝐜𝐨𝐧𝐨𝐦𝐢𝐬𝐭 𝐭𝐞𝐧𝐭𝐚𝐧𝐠 𝐚𝐫𝐚𝐡 𝐤𝐞𝐛𝐢𝐣𝐚𝐤𝐚𝐧 𝐛𝐞𝐫𝐢𝐬𝐢𝐤𝐨 𝐏𝐫𝐞𝐬𝐢𝐝𝐞𝐧 𝐏𝐫𝐚𝐛𝐨𝐰𝐨.\n\n> Prabowo mengabaikan pelajaran krisis finansial 1998 dengan memusatkan kekuasaan dan dikelilingi oleh para penjilat.\n\n> Ia memecat menteri keuangan yang dihormati, menggantinya dengan sosok yang meremehkan IMF dan harga minyak dunia.\n\n> Para pengusaha ketakutan untuk angkat bicara karena sang mantan jenderal ini sering mengintimidasi bisnis-bisnis besar.\n\n> Proyek ambisius seperti program makan siang gratis dan 80.000 koperasi desa dipandang memakan anggaran secara berlebihan.\n\n> Krisis energi saat ini telah menghapus ruang toleransi fiskal, memaksa pemerintah untuk segera mengubah arah kebijakan.\n\n> Prabowo dihadapkan pada pilihan sulit: memotong proyek, mengurangi subsidi energi, atau menembus batas defisit 3%.\n\n> Batas defisit 3% ini sangat penting sebagai sinyal kuat kedisiplinan fiskal pemerintah Indonesia sejak krisis 1998.\n\n> Saat ini investor cemas, pembayaran bunga utang melonjak, dan lembaga pemeringkat kredit mulai memantau potensi penurunan.\n\n> Tercatat modal asing senilai $6 miliar kabur dan nilai tukar rupiah anjlok hingga ke rekor paling rendah.\n\n> Demokrasi Indonesia kian terkikis dengan dilemahkannya oposisi legislatif serta wacana penghapusan pemilihan langsung gubernur provinsi.\n\n> Masyarakat sipil terus diintimidasi sehingga menghilangkan ruang bagi kritik atau perjuangan kreatif antargagasan di ruang publik.\n\n> Subsidi bahan bakar murah justru mendorong konsumsi berlebihan di tengah ancaman kelangkaan energi global saat ini.\n\n> Program makan siang gratis dinilai boros, dana sebaiknya difokuskan pada ibu hamil demi mencegah masalah stunting.\n\n> Pembentukan 80.000 koperasi desa diprediksi berpotensi menjadi lahan subur bagi praktik korupsi dan bukan solusi efisien.\n\n> Membungkam pihak oposisi di ranah legislatif, media, dan sipil dapat memicu kerusuhan brutal di jalanan kelak.",
+      "cleanText": "prabowo mengabaikan pelajaran krisis finansial dengan memusatkan kekuasaan dan dikelilingi oleh para penjilat ia memecat menteri keuangan yang dihormati menggantinya dengan sosok yang meremehkan imf dan harga minyak dunia para pengusaha ketakutan untuk angkat bicara karena sang mantan jenderal ini sering mengintimidasi bisnisbisnis besar proyek ambisius seperti program makan siang gratis dan koperasi desa dipandang memakan anggaran secara berlebihan krisis energi saat ini telah menghapus ruang toleransi fiskal memaksa pemerintah untuk segera mengubah arah kebijakan prabowo dihadapkan pada pilihan sulit memotong proyek mengurangi subsidi energi atau menembus batas defisit batas defisit ini sangat penting sebagai sinyal kuat kedisiplinan fiskal pemerintah indonesia sejak krisis saat ini investor cemas pembayaran bunga utang melonjak dan lembaga pemeringkat kredit mulai memantau potensi penurunan tercatat modal asing senilai miliar kabur dan nilai tukar rupiah anjlok hingga ke rekor paling rendah demokrasi indonesia kian terkikis dengan dilemahkannya oposisi legislatif serta wacana penghapusan pemilihan langsung gubernur provinsi masyarakat sipil terus diintimidasi sehingga menghilangkan ruang bagi kritik atau perjuangan kreatif antargagasan di ruang publik subsidi bahan bakar murah justru mendorong konsumsi berlebihan di tengah ancaman kelangkaan energi global saat ini program makan siang gratis dinilai boros dana sebaiknya difokuskan pada ibu hamil demi mencegah masalah stunting pembentukan koperasi desa diprediksi berpotensi menjadi lahan subur bagi praktik korupsi dan bukan solusi efisien membungkam pihak oposisi di ranah legislatif media dan sipil dapat memicu kerusuhan brutal di jalanan kelak",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.47
+    },
+    {
+      "index": 1622,
+      "text": "@menuembegejelek Keuangan udah mulai goyah, program delusi pemerintah itu sungguh merusak kondisi keuangan negara. Kenapa g ada ahli yang dilibatkan dalam perumusan MBG dan KOPDES.",
+      "cleanText": "keuangan goyah program delusi pemerintah sungguh merusak kondisi keuangan negara tidak ahli dilibatkan perumusan makan bergizi gratis kopdes",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.46
+    },
+    {
+      "index": 849,
+      "text": "@Boediantar4 Alhamdulillah PKS bekerja untuk mensejahterakan rakyat melalui MBG",
+      "cleanText": "alhamdulillah pks mensejahterakan rakyat makan bergizi gratis",
+      "label": "positif",
+      "labelTitle": "Positif",
+      "confidence": 99.44
+    },
+    {
+      "index": 1465,
+      "text": "Akan marah dan ini sangat mengerikan \n\nSelamatkan fiskal negara dengan menutup program makan gratis dan koperasi MP \n\nTidak ada cara lain agar investor percaya \n\nIni salah satu cara memulihkan kepercayaan investor",
+      "cleanText": "marah sangat mengerikan selamatkan fiskal negara menutup program makan gratis koperasi mp tidak investor percaya salah memulihkan kepercayaan investor",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.44
+    },
+    {
+      "index": 2065,
+      "text": "@ZH4NGH4O IH PARAH MASA MT AK GK MSUK MENTAB TROS HIKD 😭 yg pnting pnya 3 mbg kk 🙂‍↕️",
+      "cleanText": "ih buruk mt ak tidak msuk mentab tros hikd pnting pnya makan bergizi gratis kk",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.44
+    },
+    {
+      "index": 2123,
+      "text": "@WongAlasRoban @PresidenKopi Sepert MBG, KDMP dipersiapkan sbg PENGALIHAN ISU demi mensukseskan WNA tikus Tiongkok yang bebas mencuri wilayah RI serta tambang emas dll ribuan trilyun rupiah per tahun satu dekade lalu berlanjut tanpa pajak dapat fee dilanjutkan memiskinkan WNI konglomerat dan pengusaha KADIN",
+      "cleanText": "sepert makan bergizi gratis kdmp dipersiapkan sbg pengalihan isu mensukseskan wna tikus tiongkok bebas mencuri wilayah ri tambang emas dll ribuan trilyun rupiah dekade berlanjut pajak fee dilanjutkan memiskinkan wni konglomerat pengusaha kadin",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.44
+    },
+    {
+      "index": 549,
+      "text": "Muak banget gue ada tetangga yang lagi mainin lagu MBG Bahlil pake pianika😭",
+      "cleanText": "muak banget tetangga mainin lagu makan bergizi gratis bahlil pake pianika",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.43
+    },
+    {
+      "index": 2174,
+      "text": "kebiasaan bgt org indo klo ada yg kena skandal \"udah firasat\" tapi ga punya firasat kalau wowo jelek kinerjanya",
+      "cleanText": "kebiasaan banget org indo kena skandal firasat tidak firasat wowo jelek kinerjanya",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.43
+    },
+    {
+      "index": 2487,
+      "text": "@bangherwin Sakit hati gw pas baca \"penerima manfaat MBG yang sebenarnya\".",
+      "cleanText": "sakit hati pas baca penerima manfaat makan bergizi gratis",
+      "label": "negatif",
+      "labelTitle": "Negatif",
+      "confidence": 99.43
+    }
+  ]
+}

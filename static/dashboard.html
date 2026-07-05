@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard Sentimen Publik MBG</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="dashboard-hero">
+      <nav class="site-nav">
+        <a class="site-nav__link" href="./index.html">Analisis</a>
+        <a class="site-nav__link site-nav__link--active" href="./dashboard.html">Dashboard</a>
+      </nav>
+      <div>
+        <p class="eyebrow">DASHBOARD MBG</p>
+        <h1>Visualisasi Distribusi Sentimen Publik</h1>
+        <p class="hero__copy">
+          Pantau ringkasan komentar publik terhadap program Makan Bergizi Gratis
+          berdasarkan hasil klasifikasi Positif, Netral, dan Negatif.
+        </p>
+      </div>
+    </header>
+
+    <main class="dashboard-layout">
+      <section class="metric-grid">
+        <article class="metric-card metric-card--positive">
+          <span>Positif</span>
+          <strong id="positiveCount">0</strong>
+          <p id="positivePercent">0%</p>
+        </article>
+        <article class="metric-card metric-card--neutral">
+          <span>Netral</span>
+          <strong id="neutralCount">0</strong>
+          <p id="neutralPercent">0%</p>
+        </article>
+        <article class="metric-card metric-card--negative">
+          <span>Negatif</span>
+          <strong id="negativeCount">0</strong>
+          <p id="negativePercent">0%</p>
+        </article>
+        <article class="metric-card">
+          <span>Total Komentar</span>
+          <strong id="totalCount">0</strong>
+          <p id="dataSource">Dataset CSV</p>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel chart-panel">
+          <div class="panel__header">
+            <div>
+              <p class="eyebrow">DISTRIBUSI</p>
+              <h2>Proporsi Sentimen</h2>
+            </div>
+          </div>
+          <div class="donut-wrap">
+            <div class="donut-chart" id="donutChart"></div>
+            <div class="donut-legend">
+              <div><span class="legend-dot legend-dot--positive"></span>Positif <strong id="legendPositive">0%</strong></div>
+              <div><span class="legend-dot legend-dot--neutral"></span>Netral <strong id="legendNeutral">0%</strong></div>
+              <div><span class="legend-dot legend-dot--negative"></span>Negatif <strong id="legendNegative">0%</strong></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel chart-panel">
+          <p class="eyebrow">PERBANDINGAN</p>
+          <h2>Bar Chart Jumlah Sentimen</h2>
+          <div class="bar-chart">
+            <div class="dashboard-bar dashboard-bar--positive"><span>Positif</span><i id="positiveBar"></i><strong id="positiveBarValue">0</strong></div>
+            <div class="dashboard-bar dashboard-bar--neutral"><span>Netral</span><i id="neutralBar"></i><strong id="neutralBarValue">0</strong></div>
+            <div class="dashboard-bar dashboard-bar--negative"><span>Negatif</span><i id="negativeBar"></i><strong id="negativeBarValue">0</strong></div>
+          </div>
+        </article>
+
+        <article class="panel chart-panel chart-panel--wide">
+          <p class="eyebrow">PIE CHART</p>
+          <h2>Komposisi Dataset</h2>
+          <div class="pie-wrap">
+            <div class="pie-chart" id="pieChart"></div>
+            <div class="donut-legend">
+              <div><span class="legend-dot legend-dot--positive"></span>Positif <strong id="piePositive">0</strong></div>
+              <div><span class="legend-dot legend-dot--neutral"></span>Netral <strong id="pieNeutral">0</strong></div>
+              <div><span class="legend-dot legend-dot--negative"></span>Negatif <strong id="pieNegative">0</strong></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel chart-panel chart-panel--wide">
+          <p class="eyebrow">SEGMEN DATASET</p>
+          <h2>Distribusi Sentimen per Urutan Data</h2>
+          <div class="timeline" id="timeline"></div>
+        </article>
+
+        <article class="panel chart-panel chart-panel--wide">
+          <p class="eyebrow">KATA DOMINAN</p>
+          <h2>Top Kata pada Dataset</h2>
+          <div class="term-board" id="termBoard"></div>
+        </article>
+
+        <article class="panel chart-panel">
+          <p class="eyebrow">INSIGHT</p>
+          <h2>Ringkasan Persepsi</h2>
+          <div class="insight-list" id="insightList"></div>
+        </article>
+
+        <article class="panel chart-panel">
+          <p class="eyebrow">SAMPEL</p>
+          <h2>Komentar Terbaru</h2>
+          <div class="dashboard-comments" id="dashboardComments"></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="./dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/predict",
+      "destination": "/api/predict"
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/static/dashboard.html"
+    },
+    {
+      "source": "/",
+      "destination": "/static/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/static/$1"
+    }
+  ]
+}

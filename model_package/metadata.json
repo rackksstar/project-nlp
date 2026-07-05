@@ -1,0 +1,24 @@
+{
+  "model_name": "IndoBERT Fine-tuned MBG Sentiment",
+  "base_model": "ayameRushia/bert-base-indonesian-1.5G-sentiment-analysis-smsa",
+  "task": "sentiment-analysis",
+  "labels": {
+    "0": "positif",
+    "1": "netral",
+    "2": "negatif"
+  },
+  "label2id": {
+    "positif": 0,
+    "netral": 1,
+    "negatif": 2
+  },
+  "max_length": 160,
+  "accuracy": 0.9846,
+  "f1_macro": 0.9846,
+  "input_column": "clean_text",
+  "output_labels": [
+    "positif",
+    "netral",
+    "negatif"
+  ]
+}
