@@ -19,11 +19,22 @@ HOST = os.environ.get("HOST", "0.0.0.0")
 HF_MODEL_ID = os.environ.get("HF_MODEL_ID", "").strip()
 HF_TOKEN = os.environ.get("HF_TOKEN") or None
 MODEL_SOURCE = HF_MODEL_ID or str(MODEL_DIR)
+LOCAL_MODEL_FILE = MODEL_DIR / "model.safetensors"
 ALLOWED_ORIGINS = [
     origin.strip()
     for origin in os.environ.get("ALLOWED_ORIGINS", "*").split(",")
     if origin.strip()
 ]
+
+
+def validate_model_source():
+    if HF_MODEL_ID or LOCAL_MODEL_FILE.exists():
+        return
+
+    raise RuntimeError(
+        "Model checkpoint tidak ditemukan. Set HF_MODEL_ID di environment Railway "
+        "ke repo Hugging Face kamu, atau jalankan lokal dengan model_package/model.safetensors."
+    )
 
 
 def load_metadata():
@@ -53,6 +64,7 @@ def load_metadata():
         return json.load(file)
 
 
+validate_model_source()
 METADATA = load_metadata()
 ID_TO_LABEL = {int(key): value for key, value in METADATA["labels"].items()}
 LABEL_INFO = {
