@@ -1,21 +1,31 @@
 {
-  "buildCommand": "npm run build",
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/api/predict",
-      "destination": "/api/predict"
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
     },
     {
-      "source": "/dashboard",
-      "destination": "/static/dashboard.html"
+      "src": "static/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/predict",
+      "dest": "/api/predict.js"
     },
     {
-      "source": "/",
-      "destination": "/static/index.html"
+      "src": "/dashboard",
+      "dest": "/static/dashboard.html"
     },
     {
-      "source": "/(.*)",
-      "destination": "/static/$1"
+      "src": "/",
+      "dest": "/static/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/static/$1"
     }
   ]
 }
