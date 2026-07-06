@@ -1,0 +1,6 @@
+app.py
+requirements.txt
+model_package/
+scripts/
+railway.json
+.python-version
