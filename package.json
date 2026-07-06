@@ -1,0 +1,8 @@
+{
+  "name": "project-nlp-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node -e \"console.log('Static frontend: no build step required')\""
+  }
+}
